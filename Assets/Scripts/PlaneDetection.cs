@@ -20,7 +20,7 @@ public class PlaneDetection : MonoBehaviour
       return;
     }
 
-    if (SummonState.summon.HasValue) return;
+    if (SummonState.summon.Value.HasValue) return;
 
     var hits = new List<ARRaycastHit>();
     // Raycastで光線を飛ばしている。
